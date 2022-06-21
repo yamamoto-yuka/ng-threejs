@@ -35,18 +35,18 @@ export class EarthComponent implements OnInit {
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
-  // 球体を生成
-  const geometry = new THREE.SphereGeometry(300, 30, 30);
-  // material
-  //
-  const material = new THREE.MeshStandardMaterial({
-    map: new THREE.TextureLoader().load("../../assets/earth.jpg"),
-    // side: THREE.DoubleSide,
-  });
-  // メッシュ作成
-  const earth = new THREE.Mesh(geometry, material);
-    // 3D空間にメッシュを追加
-  scene.add(earth);
+  // // 球体を生成
+  // const geometry = new THREE.SphereGeometry(300, 30, 30);
+  // // material
+  // //
+  // const material = new THREE.MeshStandardMaterial({
+  //   map: new THREE.TextureLoader().load("../../assets/earth.jpg"),
+  //   // side: THREE.DoubleSide,
+  // });
+  // // メッシュ作成
+  // const earth = new THREE.Mesh(geometry, material);
+  //   // 3D空間にメッシュを追加
+  // scene.add(earth);
   
   // 平行光源
   // DirectionalLight(色、強度);
